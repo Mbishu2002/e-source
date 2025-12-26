@@ -1,0 +1,7 @@
+{
+  "name": "GlobalSource AI - E-commerce Sourcing Assistant",
+  "description": "A sophisticated tool for e-commerce sellers to batch-upload product images, find suppliers on Alibaba/1688 using Gemini grounding, and generate SEO-optimized product listings for export.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
