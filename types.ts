@@ -36,3 +36,35 @@ export interface GroundingSource {
   title: string;
   uri: string;
 }
+
+export interface SyncProfile {
+  id: string;
+  name: string;
+  imageApiUrl: string;
+  productApiUrl: string;
+  bearerToken: string;
+  catId: string;
+  subCatId: string;
+  childCatId: string;
+  sellerId: string;
+  // New fixed fields
+  deliveryDayMin: string;
+  deliveryDayMax: string;
+  warrantyDay: string;
+  warrantyInfo: string;
+  weight: string;
+  unit: string;
+}
+
+export interface ExportRecord {
+  id: string;
+  timestamp: number;
+  productName: string;
+  profileName: string;
+  imageCount: number;
+  status: 'success' | 'failed';
+  price: number;
+  categoryPath: string;
+  // Snapshot for "coming back" to it
+  dataSnapshot: Partial<SupplierResult>;
+}
